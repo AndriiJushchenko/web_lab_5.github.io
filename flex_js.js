@@ -31,7 +31,7 @@ function cooockie() {
         confirmReload = confirm(`В coockie було знайдене значення: ${storedNumber}. Бажаєте зберегти його?`);
         if (confirmReload) {
             alert("Coockie збережено. Будь ласка, перезавантажте сторінку.");
-            location.reload();
+            document.getElementById('main_form').style.visibility = "hidden";
         } else {
             document.getElementById('main_form').style.visibility = "visible";
         }
